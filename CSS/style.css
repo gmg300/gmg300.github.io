@@ -25,30 +25,22 @@ h1 {
 
 nav {
     background-color: #666;
+    position: sticky;
+    top: 0px;
 }
 
 nav ul {
     margin-block-start: 0rem;
-}
-
-nav li {
-    display: inline-block;
     list-style-type: none;
     padding: 1rem;
     color: white;
     font-size: 1.5rem;
-    width:25%;
+    text-align: center;
 }
 
-.about-me .projects{
-    float: left;
-    width: 33%;
-}
-
-
-.contact {
-    float: right;
-    width: 33%;
+nav li {
+    display: inline;
+    padding: 0 50px;
 }
 
 footer {
