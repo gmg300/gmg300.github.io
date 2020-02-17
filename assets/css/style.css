@@ -1,24 +1,66 @@
-/* General CSS */
+/* Init CSS */
 @import url('https://fonts.googleapis.com/css?family=Michroma|Raleway|Syncopate:400,700&display=swap');
 
 :root {
     font-size: 1rem;
 }
 
-html {
+/* Media Queries */
+/* --- Small devices */
+@media only screen and (max-width: 500px) {
+    :root {
+        font-size: .8rem;
+    }
+  }
+
+/* --- Medium devices */
+@media only screen and (max-width: 425px) {
+    :root {
+        font-size: .6rem;
+    }
+  }
+
+/* General CSS */
+html, body {
     width: 100%;
     height: 100%;
+    font-family: 'Raleway', sans-serif;
 }
 
 body {
-    background-image: url("../Images/code-edited.jpg");
+    background: url("../img/code-edited.jpg") no-repeat center center fixed;
+    background-size: cover;
     background-color: white;
     color: white;
-    font-family: 'Raleway', sans-serif;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
+}
+
+h2 {
+    color: #FF6F61;
+    font-size: 2rem;
+}
+
+hr {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 95%;
+    color: #F5F5F5;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.btn-outline-primary {
+    color: #FF6F61;
+    border: 1px solid #FF6F61;
+}
+
+.btn-outline-primary:hover {
+    color: white;
+    background-color: #FF6F61;
+    border: 1px solid #FF6F61;
 }
 
 /* Navigation */
@@ -27,10 +69,9 @@ body {
     font-family: 'Michroma', sans-serif;
 }
 
-/* Navigation --- Links styling */
 .navbar-dark .navbar-nav .nav-text {
-    color: coral;
-    border: 1px solid coral;
+    color: #FF6F61;
+    border: 1px solid #FF6F61;
     margin-right: 5px;
 }
 
@@ -43,7 +84,6 @@ body {
     color: white;
 }
 
-/* Navigation --- Collapse links styling */
 .navbar-collapse .navbar-nav .nav-item {
     text-align: center;
     margin-bottom: 5px;
@@ -74,7 +114,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: coral;
+    background: #FF6F61;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
     -webkit-transform-origin: 0 50%;
@@ -94,52 +134,39 @@ body {
     transform: scaleX(1);
   }
 
-/* Main Content --- General */
-.container {
-    padding: 5%;
-    background-color: rgba(255, 255, 255, .9);
-    color: #333;
-    border: 3px solid coral;
-    /* overflow: auto; */
-    flex-grow: 1;
-    min-height: auto;
+
+/* Carousel - Featured Work */
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
 }
 
-h2 {
-    color: coral;
-    font-size: 2rem;
+/* About Me */
+
+
+/* Portfolio */
+
+
+/* Contact */
+.fa-github {
+    color: #6e5494;
 }
 
-hr {
-    padding-bottom: 15px;
+.fa-linkedin {
+    color: #0072b1;
 }
 
-/* Main Content --- Index */
-.about-me-text {
-    font-size: 1.3rem;
+.fa-envelope {
+    color: #b23121;
 }
 
-/* Main Content --- Portfolio */
-.portfolio-item-body {
-    padding: .75rem 1rem;
-    background-color: #333;
-    height: 15vh;
+.fa-github, .fa-linkedin, .fa-envelope {
+    margin: 1rem;
 }
 
-.portfolio-item-header {
-    color: coral;
-    margin-bottom: .5rem;
-}
-
-.portfolio-item-text {
-    line-height: 1.25;
-    font-size: .75rem;
+a h3 {
+    margin-top: .25rem;
     color: white;
-}
-
-/* Main Content --- Contact */
-label {
-    color: coral;
 }
 
 /* Footer */
@@ -149,26 +176,12 @@ footer p {
 }
 
 footer p a, footer p a:hover, footer p a:visited {
-    color: coral;
+    color: #FF6F61;
 }
 footer p a:active {
     color: white;
 }
 
-/* Media Queries */
-/* --- Small devices */
-@media only screen and (max-width: 500px) {
-    :root {
-        font-size: .8rem;
-    }
-  }
-
-/* --- Medium devices */
-@media only screen and (max-width: 425px) {
-    :root {
-        font-size: .6rem;
-    }
-  }
 
 
 
