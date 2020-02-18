@@ -3,15 +3,14 @@
 <svg version="1.1" id="Base" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 500 400" style="enable-background:new 0 0 500 400;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FF7F50;}
-	.st1{fill:#FFFFFF;}
-	.st2{font-family:'LucidaGrande-Bold';}
-	.st3{font-size:150px;}
+	.st0{fill:#FF6F61;}
+	.st1{font-family:'LucidaGrande-Bold';}
+	.st2{font-size:150px;}
+	.st3{font-family:'MyriadPro-Regular';}
+	.st4{font-size:300px;}
 </style>
-<g>
-	<path class="st0" d="M389,289c0,24.75-20.25,45-45,45H170c-24.75,0-45-20.25-45-45V115c0-24.75,20.25-45,45-45h174
-		c24.75,0,45,20.25,45,45V289z"/>
-</g>
-<text transform="matrix(1 0 0 1 152.0215 206.2979)" class="st1 st2 st3">G</text>
-<text transform="matrix(1 0 0 1 249.9938 300.5721)" class="st1 st2 st3">G</text>
+<text transform="matrix(1 0 0 1 152.0215 206.2979)" class="st0 st1 st2">G</text>
+<text transform="matrix(1 0 0 1 249.9938 300.5721)" class="st0 st1 st2">G</text>
+<text transform="matrix(1 0 0 1 73.8936 285.3618)" class="st0 st3 st4">{</text>
+<text transform="matrix(1 0 0 1 360.7398 285.0191)" class="st0 st3 st4">}</text>
 </svg>

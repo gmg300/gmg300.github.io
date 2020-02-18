@@ -7,18 +7,24 @@
 
 /* Media Queries */
 /* --- Small devices */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 566px) {
     :root {
         font-size: .8rem;
     }
   }
 
 /* --- Medium devices */
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 455px) {
     :root {
         font-size: .6rem;
     }
   }
+
+@media only screen and (max-width: 455px) {
+    :root {
+        font-size: .5rem;
+    }
+  }  
 
 /* General CSS */
 html, body {
@@ -38,14 +44,15 @@ body {
 
 h2 {
     color: #FF6F61;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px #ffffff80;
 }
 
 hr {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    width: 95%;
-    color: #F5F5F5;
+    width: 90%;
+    border-color: #ff6f61;
 }
 
 a:hover {
@@ -65,7 +72,7 @@ a:hover {
 
 /* Navigation */
 .brand-text {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: 'Michroma', sans-serif;
 }
 
