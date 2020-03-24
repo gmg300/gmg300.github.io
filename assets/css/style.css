@@ -1,197 +1,174 @@
-/* Init CSS */
-@import url('https://fonts.googleapis.com/css?family=Michroma|Raleway|Syncopate:400,700&display=swap');
+/* INIT */
+@import url("https://fonts.googleapis.com/css?family=Michroma|Raleway|Syncopate:400,700&display=swap");
 
 :root {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
-/* Media Queries */
-/* --- Small devices */
-@media only screen and (max-width: 566px) {
-    :root {
-        font-size: .8rem;
-    }
-  }
-
-/* --- Medium devices */
-@media only screen and (max-width: 455px) {
-    :root {
-        font-size: .6rem;
-    }
-  }
-
-@media only screen and (max-width: 455px) {
-    :root {
-        font-size: .5rem;
-    }
-  }  
-
-/* General CSS */
-html, body {
-    width: 100%;
-    height: 100%;
-    font-family: 'Raleway', sans-serif;
+/* GENERAL */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Raleway", sans-serif;
+  color: #253237;
 }
 
 body {
-    background: url("../img/code-edited.jpg") no-repeat center center fixed;
-    background-size: cover;
-    background-color: white;
-    color: white;
-    display: flex;
-    flex-direction: column;
+  background: url("../images/code-edited.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-h2 {
-    color: #FF6F61;
-    font-size: 2.5rem;
-    text-shadow: 1px 1px 2px #ffffff80;
+main {
+  flex: 1 0 auto;
 }
 
-hr {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    width: 90%;
-    border-color: #ff6f61;
+/* HEADER */
+nav,
+.sidenav {
+  background-color: #9db4c0;
 }
 
-a:hover {
-    text-decoration: none;
+nav li a {
+  color: #253237;
 }
 
-.btn-outline-primary {
-    color: #FF6F61;
-    border: 1px solid #FF6F61;
+nav .brand-logo {
+  color: #253237;
 }
 
-.btn-outline-primary:hover {
-    color: white;
-    background-color: #FF6F61;
-    border: 1px solid #FF6F61;
+.margin-left {
+  margin-left: 2rem;
 }
 
-/* Navigation */
-.brand-text {
-    font-size: 2rem;
-    font-family: 'Michroma', sans-serif;
+.nav-wrapper a span {
+  font-size: 1rem;
 }
 
-.navbar-dark .navbar-nav .nav-text {
-    color: #FF6F61;
-    border: 1px solid #FF6F61;
-    margin-right: 5px;
+.sidenav li {
+  padding: 1rem;
+  margin-top: 1rem;
 }
 
-.navbar-dark .navbar-nav .nav-text:active {
-    color: white;
-    background-color: rgba(255, 127, 80, .8);
+.sidenav li a {
+  font-size: 2rem;
 }
 
-.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:active, .navbar-dark .navbar-nav .nav-link:focus  {
-    color: white;
+/* MAIN */
+#profile,
+#portfolio,
+#connect {
+  margin-top: 3rem;
 }
 
-.navbar-collapse .navbar-nav .nav-item {
-    text-align: center;
-    margin-bottom: 5px;
+.margin-bottom {
+  margin-bottom: 3rem;
 }
 
-.navbar-nav {
-    margin-top: 5px;
+.background {
+  background-color: #5c6b73;
+  padding: 3rem;
 }
 
-/* Navigation --- Sweep To Right Effect */
-.hvr-sweep-to-right {
-    /* display: inline-block; */
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: relative;
-    -webkit-transition-property: color;
-    transition-property: color;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
+.title {
+  position: relative;
+  top: 20px;
+}
+
+h3 {
+  font-weight: 700;
+  background-color: #9db4c0;
+  padding: 1rem;
+  width: 20rem;
+  border-radius: 0 5px 5px 0;
+  margin-bottom: 0;
+}
+
+/* CAROUSEL */
+.carousel {
+  margin-top: 1rem;
+}
+
+/* PROFILE */
+.headshot {
+  border: solid 2px #e0fbfc;
+}
+
+h4 {
+  display: inline;
+  padding-right: 1rem;
+  margin-right: 1rem;
+  color: #e0fbfc;
+  border-right: solid 2px #e0fbfc;
+}
+
+.profile-text span {
+  display: inline;
+  font-size: 1.5rem;
+  color: #9db4c0;
+}
+
+/* PORTFOLIO */
+.card-title {
+  color: #253237;
+}
+
+.card-content,
+card .card-reveal {
+  background-color: #e0fbfc;
+}
+
+.project-link {
+  background-color: #5c6b73;
+}
+
+.project-link a {
+  color: #e0fbfc;
+}
+
+.project-link:hover,
+.project-link:active {
+  background-color: #5c6b7380;
+}
+
+/* CONNECT */
+i,
+.social-link div {
+  color: #e0fbfc;
+  font-size: 2rem;
+}
+
+.social-link {
+  margin-top: 2rem;
+}
+
+/* FOOTER */
+footer {
+  background-color: #9db4c0;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 600px) {
+  .background {
+    padding: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
-  .hvr-sweep-to-right:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #FF6F61;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transform-origin: 0 50%;
-    transform-origin: 0 50%;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
+  h3 {
+    width: 10rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
   }
-  .hvr-sweep-to-right:hover {
-    color: white;
+  h4 {
+    font-size: 1rem;
+    padding-right: .5rem;
+    margin-right: .5rem;
   }
-  .hvr-sweep-to-right:hover:before {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
+  .profile-text span {
+    font-size: 0.75rem;
   }
-
-
-/* Carousel - Featured Work */
-.carousel-inner img {
-    width: 100%;
-    height: 100%;
 }
-
-/* About Me */
-
-
-/* Portfolio */
-
-
-/* Contact */
-.fa-github {
-    color: #6e5494;
-}
-
-.fa-linkedin {
-    color: #0072b1;
-}
-
-.fa-envelope {
-    color: #b23121;
-}
-
-.fa-github, .fa-linkedin, .fa-envelope {
-    margin: 1rem;
-}
-
-a h3 {
-    margin-top: .25rem;
-    color: white;
-}
-
-/* Footer */
-footer p {
-    font-size: .8rem;
-    color: rgba(242, 242, 242, .75);
-}
-
-footer p a, footer p a:hover, footer p a:visited {
-    color: #FF6F61;
-}
-footer p a:active {
-    color: white;
-}
-
-
-
-
-
-
-
