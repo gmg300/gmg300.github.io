@@ -28,6 +28,10 @@ main {
 }
 
 /* HEADER */
+nav {
+  margin-bottom: 2rem;
+}
+
 nav,
 .sidenav {
   background-color: #9db4c0;
@@ -65,7 +69,7 @@ nav .brand-logo {
   margin-top: 3rem;
 }
 
-.margin-bottom {
+.mb-3 {
   margin-bottom: 3rem;
 }
 
@@ -89,8 +93,21 @@ h3 {
 }
 
 /* CAROUSEL */
-.carousel {
-  margin-top: 1rem;
+.carousel-container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.carousel { 
+  min-height: 500px;
+}
+
+.carousel .carousel-slider .carousel-item {
+  min-height: 500px;
+}
+
+.carousel img {
+  height: 500px;
 }
 
 /* PROFILE */
@@ -152,7 +169,7 @@ footer {
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .background {
     padding: 0;
     padding-top: 2rem;
@@ -171,4 +188,14 @@ footer {
   .profile-text span {
     font-size: 0.75rem;
   }
+  .carousel { 
+    min-height: 185px;
+  }
+  .carousel .carousel-slider .carousel-item {
+    min-height: 185px;
+  }
+  .carousel img {
+    height: 185px;
+  }
 }
+

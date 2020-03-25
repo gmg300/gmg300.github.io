@@ -7,7 +7,7 @@ $(document).ready(function() {
   });
   $(".carousel.carousel-slider").carousel({
     fullWidth: true,
-    indicators: true
+    indicators: false
   });
 
    // VARIABLES
@@ -93,4 +93,5 @@ $(document).ready(function() {
       $("#portfolio-view").prepend(block);
     }
   }
+
 });
