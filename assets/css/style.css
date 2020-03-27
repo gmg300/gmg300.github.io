@@ -66,6 +66,41 @@ nav .brand-logo {
   font-size: 2rem;
 }
 
+/* LOGO ANIMATION */
+/* https://stackoverflow.com/questions/6805482/css3-transition-animation-on-load */
+@keyframes revealLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.revealLeft {
+  animation: 1.5s ease-out 0s 1 revealLeft;
+}
+@keyframes revealTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.revealTop {
+  animation: 1.5s ease-out 0s 1 revealTop;
+}
+
 /* MAIN */
 #profile,
 #portfolio,
@@ -153,7 +188,7 @@ card .card-reveal {
 }
 
 .social-link a:hover {
-  color: white;
+  color: rgba(224,251,252,0.80);
 }
 
 .social-link {
@@ -196,7 +231,9 @@ footer {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+.hvr-float:hover,
+.hvr-float:focus,
+.hvr-float:active {
   -webkit-transform: translateY(-8px);
   transform: translateY(-8px);
 }
@@ -225,14 +262,5 @@ footer {
   }
   .profile-text span {
     font-size: 0.75rem;
-  }
-  .carousel {
-    min-height: 185px;
-  }
-  .carousel .carousel-slider .carousel-item {
-    min-height: 185px;
-  }
-  .carousel img {
-    height: 185px;
   }
 }

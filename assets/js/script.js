@@ -59,12 +59,12 @@ $(document).ready(function() {
     // console.log(viewport);
     if(viewport <= 600) {
         block = `{ G G }`;
-        $('.brand-logo').addClass('center');
-        $('.brand-logo').removeClass('margin-left');
+        $('.brand-logo').removeClass('margin-left revealLeft');
+        $('.brand-logo').addClass('revealTop center');
     } else {
         block = '{ Garrett Gassensmith }';
-        $('.brand-logo').removeClass('center');
-        $('.brand-logo').addClass('margin-left');
+        $('.brand-logo').removeClass('revealTop center');
+        $('.brand-logo').addClass('margin-left revealLeft');
     }
     $('.brand-logo').text(block);
   }
