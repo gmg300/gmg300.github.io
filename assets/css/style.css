@@ -70,7 +70,7 @@ nav .brand-logo {
 #profile,
 #portfolio,
 #connect {
-  margin-top: 3rem;
+  margin-top: 10rem;
 }
 
 .mb-3 {
@@ -141,11 +141,15 @@ card .card-reveal {
 /* CONNECT */
 .social-link a {
   color: #e0fbfc;
-  text-shadow: 2px 2px 20px rgba(0, 0, 0, .5);
+  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
 }
 
 .social-link div {
   font-size: 2rem;
+}
+
+.social-link a i {
+  font-size: 5rem;
 }
 
 .social-link a:hover {
@@ -155,8 +159,14 @@ card .card-reveal {
 .social-link {
   margin-top: 2rem;
 }
+
+/* FOOTER */
+footer {
+  background-color: #9db4c0;
+}
+
+/* HOVER.CSS - https://ianlunn.github.io/Hover/ */
 /* Grow */
-/* https://ianlunn.github.io/Hover/ */
 .hvr-grow {
   display: inline-block;
   vertical-align: middle;
@@ -172,10 +182,23 @@ card .card-reveal {
 .hvr-grow:active {
   transform: scale(1.1);
 }
-
-/* FOOTER */
-footer {
-  background-color: #9db4c0;
+/* FLOAT */
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
 }
 
 /* MEDIA QUERIES */
@@ -192,13 +215,18 @@ footer {
   }
   h4 {
     font-size: 1rem;
-    padding-right: .5rem;
-    margin-right: .5rem;
+    padding-right: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  #profile,
+  #portfolio,
+  #connect {
+    margin-top: 5rem;
   }
   .profile-text span {
     font-size: 0.75rem;
   }
-  .carousel { 
+  .carousel {
     min-height: 185px;
   }
   .carousel .carousel-slider .carousel-item {
@@ -208,4 +236,3 @@ footer {
     height: 185px;
   }
 }
-
