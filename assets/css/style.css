@@ -122,7 +122,7 @@ nav .brand-logo {
   top: 20px;
 }
 
-h3 {
+.title h3 {
   font-weight: 700;
   background-color: #9db4c0;
   padding: 1rem;
@@ -136,18 +136,64 @@ h3 {
   border: solid 2px #e0fbfc;
 }
 
-h4 {
-  display: inline;
+.profile-title h5 {
+  text-align: right;
   padding-right: 1rem;
-  margin-right: 1rem;
+  margin-right: .5rem;
   color: #e0fbfc;
   border-right: solid 2px #e0fbfc;
 }
 
-.profile-text span {
-  display: inline;
-  font-size: 1.5rem;
-  color: #9db4c0;
+.profile-detail h5 {
+  text-align: left;
+}
+
+.profile-title, .profile-detail {
+  display: inline-block;
+}
+
+.profile-body {
+  font-size: 1.5em;
+  color: #e0fbfc;
+}
+
+.tech-card {
+  background-color: white;
+  border-radius: 5px;
+  width: 125px;
+  height: 150px;
+  padding-top: 1rem;
+  margin: 1rem;
+  vertical-align: middle;
+}
+
+.center-card {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: auto; 
+}
+
+.tech-title {
+  color: #e0fbfc;
+
+}
+
+.fa-html5 {
+  color: #F16529;
+}
+
+.fa-css3-alt {
+  color: #2965f1;
+}
+
+.fa-js {
+  color: #F0db4f;
+}
+
+.fa-node-js {
+  color: #68a063;
 }
 
 /* PORTFOLIO */
@@ -245,22 +291,26 @@ footer {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
-  h3 {
-    width: 10rem;
-    font-size: 1.5rem;
-    padding: 0.5rem;
-  }
-  h4 {
-    font-size: 1rem;
-    padding-right: 0.5rem;
-    margin-right: 0.5rem;
-  }
   #profile,
   #portfolio,
   #connect {
     margin-top: 5rem;
   }
-  .profile-text span {
-    font-size: 0.75rem;
+ .title h3 {
+    width: 10rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+  .profile-title h5, .profile-detail h5 {
+    font-size: 1rem;
+    padding-right: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .profile-body {
+    font-size: .9rem;
+    padding: .75rem;
+  }
+  .tech-title {
+    font-size: 1.5rem;
   }
 }

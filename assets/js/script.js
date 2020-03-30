@@ -60,7 +60,7 @@ $(document).ready(function() {
     if(viewport <= 600) {
         block = `{ G G }`;
         $('.brand-logo').removeClass('margin-left revealLeft');
-        $('.brand-logo').addClass('revealTop center');
+        $('.brand-logo').addClass('center');
     } else {
         block = '{ Garrett Gassensmith }';
         $('.brand-logo').removeClass('revealTop center');
