@@ -6,8 +6,8 @@ $(document).ready(function() {
     preventScrolling: true
   });
 
-   // VARIABLES
-   var portfolio = [
+  // VARIABLES
+  var portfolio = [
     {
       title: "Password Generator",
       description:
@@ -18,55 +18,79 @@ $(document).ready(function() {
     },
     {
       title: "Code Quiz",
-      description: "Code quiz is a single-page web app using HTML, Tailwindcss and pure JS that serves 10 geography questions with a multiple choice answering system. Along side generating the questions and answers in random order the web app includes scoring based off a built-in timer, answer feedback, and a localStorage based high score board that accepts usernames with scores and basic management like deleting old scores.",
+      description:
+        "Code quiz is a single-page web app using HTML, Tailwindcss and pure JS that serves 10 geography questions with a multiple choice answering system. Along side generating the questions and answers in random order the web app includes scoring based off a built-in timer, answer feedback, and a localStorage based high score board that accepts usernames with scores and basic management like deleting old scores.",
       img: "code-quiz-s.png",
       repo: "https://github.com/gmg300/code-quiz",
       page: "https://gmg300.github.io/code-quiz/"
     },
     {
       title: "Work Day Planner",
-      description: "This web app is a simple (work day) calendar that allows users to schedule, edit and delete events while saving them in local storage. The time is tracked along the calendar showing present and future blocks of time by color and disabling past blocks from new inputs. The app sets the day/time using moment.js and displays current weekday, date and time in the heading.",
+      description:
+        "This web app is a simple (work day) calendar that allows users to schedule, edit and delete events while saving them in local storage. The time is tracked along the calendar showing present and future blocks of time by color and disabling past blocks from new inputs. The app sets the day/time using moment.js and displays current weekday, date and time in the heading.",
       img: "work-day-planner-s.png",
       repo: "https://github.com/gmg300/work-day-planner",
       page: "https://gmg300.github.io/work-day-planner/"
     },
     {
       title: "Weather Dashboard",
-      description: "A weather app that shows basic weather data, and a 5-day forecast for a city based on user search. User search history is saved in a list that can get weather data again when the user clicks on the city name.",
+      description:
+        "A weather app that shows basic weather data, and a 5-day forecast for a city based on user search. User search history is saved in a list that can get weather data again when the user clicks on the city name.",
       img: "weather-dashboard-s.png",
       repo: "https://github.com/gmg300/weather-dashboard",
       page: "https://gmg300.github.io/weather-dashboard/"
     },
     {
       title: "Shaker",
-      description: "Shaker is a web app for discovering new cocktails and drinks. Users can The Cocktail DB api for a random list of cocktails filtering by alcohol type and number of drinks. Drink cards display a name and photo of the drink as well as ingredients, measurements, and recipe instructions. Favorite drinks can be stored in localStorage, recalled for future use and deleted is necessary. Shaker also features the Google maps api, allow users to pull up a map of bars near them that may be serving the new and interesting cocktails they find!",
+      description:
+        "Shaker is a web app for discovering new cocktails and drinks. Users can The Cocktail DB api for a random list of cocktails filtering by alcohol type and number of drinks. Drink cards display a name and photo of the drink as well as ingredients, measurements, and recipe instructions. Favorite drinks can be stored in localStorage, recalled for future use and deleted is necessary. Shaker also features the Google maps api, allow users to pull up a map of bars near them that may be serving the new and interesting cocktails they find!",
       img: "shaker-s.png",
       repo: "https://github.com/gmg300/Shaker",
       page: "https://gmg300.github.io/Shaker/"
     }
   ];
 
+  var technologies = [
+    {
+      name: "HTML",
+      logo: "fab fa-html5 fa-5x"
+    },
+    {
+      name: "CSS",
+      logo: "fab fa-css3-alt fa-5x"
+    },
+    {
+      name: "Javascript",
+      logo: "fab fa-js fa-5x"
+    },
+    {
+      name: "Node.js",
+      logo: "fab fa-node-js fa-5x"
+    },
+  ];
+
   // INIT
   getName();
-  $( window ).resize(getName);
+  $(window).resize(getName);
   getCopyright();
   getPortfolio();
+  getTechnologies();
 
   // FUNCTIONS
   function getName() {
-    var block = '';
+    var block = "";
     var viewport = $(window).width();
     // console.log(viewport);
-    if(viewport <= 600) {
-        block = `{ G G }`;
-        $('.brand-logo').removeClass('margin-left revealLeft');
-        $('.brand-logo').addClass('center');
+    if (viewport <= 600) {
+      block = `{ G G }`;
+      $(".brand-logo").removeClass("margin-left revealLeft");
+      $(".brand-logo").addClass("center");
     } else {
-        block = '{ Garrett Gassensmith }';
-        $('.brand-logo').removeClass('revealTop center');
-        $('.brand-logo').addClass('margin-left revealLeft');
+      block = "{ Garrett Gassensmith }";
+      $(".brand-logo").removeClass("revealTop center");
+      $(".brand-logo").addClass("margin-left revealLeft");
     }
-    $('.brand-logo').text(block);
+    $(".brand-logo").text(block);
   }
 
   function getCopyright() {
@@ -75,31 +99,38 @@ $(document).ready(function() {
   }
 
   function getPortfolio() {
-    for (i = 0; i < portfolio.length; i++) {
-      var title = portfolio[i].title;
-      var description = portfolio[i].description;
-      var img = "assets/images/stills/" + portfolio[i].img;
-      var repo = portfolio[i].repo;
-      var page = portfolio[i].page;
+    $.each(portfolio, function() {
+      var img = "assets/images/stills/" + this.img;
       var block = `<div class="col s12 m6">
-                    <div class="card hoverable" data-index="${i}">
+                    <div class="card hoverable">
                         <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator" src="${img}">
                         </div>
                         <div class="card-content">
-                            <span class="card-title activator">${title}</span>
-                            <p class="btn project-link"><a class="" href="${repo}">Github</a></p>
-                            <p class="btn project-link"><a class="" href="${page}">Live Page</a></p>
+                            <span class="card-title activator">${this.title}</span>
+                            <p class="btn project-link"><a class="" href="${this.repo}">Github</a></p>
+                            <p class="btn project-link"><a class="" href="${this.page}">Live Page</a></p>
                         </div>
                         <div class="card-reveal">
                             <span class="card-title">Project Description<i
                             class="material-icons right">close</i></span>
-                            <p>${description}</p>
+                            <p>${this.description}</p>
                         </div>
                     </div>
                     </div>`;
       $("#portfolio-view").prepend(block);
-    }
+    });
   }
 
+  function getTechnologies() {
+   $.each(technologies, function() {
+      var block = `<div class="col">
+                    <div class="tech-card center z-depth-5">
+                      <i class="${this.logo}"></i>
+                      <h6>${this.name}</h6>
+                    </div>
+                   </div>`;
+      $("#tech-view").append(block);
+    });
+  }
 });
