@@ -1,6 +1,5 @@
 $(document).ready(function() {
   // ACTIVATE CSS
-  $(".parallax").parallax();
   $(".sidenav").sidenav({
     draggable: true,
     preventScrolling: true
@@ -81,7 +80,7 @@ $(document).ready(function() {
     var block = "";
     var viewport = $(window).width();
     // console.log(viewport);
-    if (viewport <= 600) {
+    if (viewport <= 800) {
       block = `{ G G }`;
       $(".brand-logo").removeClass("margin-left revealLeft");
       $(".brand-logo").addClass("center");
@@ -124,12 +123,10 @@ $(document).ready(function() {
 
   function getTechnologies() {
    $.each(technologies, function() {
-      var block = `<div class="col">
-                    <div class="tech-card center z-depth-5">
+      var block = `<div class="tech-card center z-depth-5">
                       <i class="${this.logo}"></i>
                       <h6>${this.name}</h6>
-                    </div>
-                   </div>`;
+                    </div>`;
       $("#tech-view").append(block);
     });
   }

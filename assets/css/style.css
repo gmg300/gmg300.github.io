@@ -168,12 +168,13 @@ nav .brand-logo {
   vertical-align: middle;
 }
 
-.center-card {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  height: auto; 
+#tech-view {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#tech-view .col {
+  padding: 0;
 }
 
 .tech-title {
@@ -286,7 +287,13 @@ footer {
 }
 
 /* MEDIA QUERIES */
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 80%;
+  }
+}
+ 
+@media only screen and (max-width: 750px) {
   .background {
     padding: 0;
     padding-top: 2rem;
@@ -304,14 +311,17 @@ footer {
   }
   .profile-title h5, .profile-detail h5 {
     font-size: 1rem;
-    padding-right: 0.5rem;
-    margin-right: 0.5rem;
   }
   .profile-body {
-    font-size: .9rem;
-    padding: .75rem;
+    font-size: .85rem;
   }
   .tech-title {
     font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .profile-title h5, .profile-detail h5 {
+    font-size: .85rem;
   }
 }
