@@ -6,7 +6,7 @@ $(document).ready(function() {
   });
 
   // VARIABLES
-  var portfolio = [
+  const portfolio = [
     {
       title: "Password Generator",
       description:
@@ -49,7 +49,7 @@ $(document).ready(function() {
     }
   ];
 
-  var technologies = [
+  const technologies = [
     {
       name: "HTML",
       logo: "fab fa-html5 fa-5x"
@@ -69,38 +69,33 @@ $(document).ready(function() {
   ];
 
   // INIT
-  getName();
-  $(window).resize(getName);
   getCopyright();
   getPortfolio();
   getTechnologies();
+  getMenuLabel();
+
+
+  $('.label').on('click', function() {
+    $('.label').removeClass("active");
+    $(this).addClass("active");
+    getMenuLabel();
+  })
 
   // FUNCTIONS
-  function getName() {
-    var block = "";
-    var viewport = $(window).width();
-    // console.log(viewport);
-    if (viewport <= 800) {
-      block = `{ G G }`;
-      $(".brand-logo").removeClass("margin-left revealLeft");
-      $(".brand-logo").addClass("center");
-    } else {
-      block = "{ Garrett Gassensmith }";
-      $(".brand-logo").removeClass("revealTop center");
-      $(".brand-logo").addClass("margin-left revealLeft");
-    }
-    $(".brand-logo").text(block);
+  function getMenuLabel() {
+    let currentLabel = $('.active').text(); 
+    $('.menu-label').text(currentLabel);
   }
 
   function getCopyright() {
-    var currentYear = moment().year();
+    let currentYear = moment().year();
     $("#copyright").text("© " + currentYear + " Garrett Gassensmith");
   }
 
   function getPortfolio() {
     $.each(portfolio, function() {
-      var img = "assets/images/stills/" + this.img;
-      var block = `<div class="col s12 m6">
+      let img = "assets/images/stills/" + this.img;
+      let block = `<div class="col s12 m6">
                     <div class="card hoverable">
                         <div class="card-image waves-effect waves-block waves-light">
                             <img class="activator" src="${img}">
@@ -123,7 +118,7 @@ $(document).ready(function() {
 
   function getTechnologies() {
    $.each(technologies, function() {
-      var block = `<div class="tech-card center z-depth-5">
+      let block = `<div class="tech-card center z-depth-5">
                       <i class="${this.logo}"></i>
                       <h6>${this.name}</h6>
                     </div>`;
