@@ -6,13 +6,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- STYLE LINKS -->
-  <link rel="icon" href="assets/images/favicon.svg" type="image/svg" />
+  <link rel="icon" href="public/icons/favicon.svg" type="image/svg" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="public/style.css">
   <title>Garrett Gassensmith</title>
 </head>
 
@@ -22,122 +22,96 @@
     <div class="navbar-fixed">
       <nav>
         <div class="nav-wrapper">
-          <a href="#" class="brand-logo"></a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="#profile">Profile</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#connect">Connect</a></li>
+          <a href="#" class="brand-logo center"></a>
+          <a href="#" data-target="trigger" class="sidenav-trigger show-on-large">
+            <i class="fas fa-bars"></i>
+            <span class="menu-label"></span>
+          </a>
+          <ul id="nav-mobile" class="right">
           </ul>
         </div>
       </nav>
     </div>
-    <!-- MOBILE SIDENAV -->
-    <ul class="sidenav" id="mobile-demo">
-      <li><a href="#profile">Profile</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#connect">Connect</a></li>
+    <!-- SIDENAV -->
+    <ul class="sidenav" id="trigger">
+      <li><a class="sidenav-close label active" data-text="Profile" href="#profile">Profile</a></li>
+      <li><a class="sidenav-close label" data-text="Projects" href="#projects">Projects</a></li>
+      <li><a class="sidenav-close label" data-text="Connect" href="#connect">Connect</a></li>
     </ul>
   </header>
-  <main>
+
+  <main class="container">
+    <!-- <div class="parallax-container">
+      <div class="parallax"><img src="public/images/chicago.jpg"></div>
+    </div> -->
     <!-- PROFILE -->
-    <div id="profile" class="title">
-      <h3 class="z-depth-5 right-align"><span>{ Profile }</span></h3>
-    </div>
-    <section class="background">
-      <div class="container">
-        <div class="row">
-          <div class="center">
-            <img class="headshot z-depth-5" src="assets/images/headshot.jpg" alt="Photo of Garrett" width="50%"
-              height="50%">
-          </div>
-        </div>
-        <div class="row center">
-          <div class="profile-title">
-            <div>
-              <h5>Name</h5>
-            </div>
-            <div>
-              <h5>Title</h5>
-            </div>
-            <div>
-              <h5>Email</h5>
-            </div>
-            <div>
-              <h5>Mobile</h5>
-            </div>
-            <div>
-              <h5>Location</h5>
-            </div>
-          </div>
-          <div class="profile-detail">
-            <div>
-              <h5>Garrett Gassensmith</h5>
-            </div>
-            <div>
-              <h5>Full-stack Developer</h5>
-            </div>
-            <div>
-              <h5>garrettgassensmith@gmail.com</h5>
-            </div>
-            <div>
-              <h5>815.529.5686</h5>
-            </div>
-            <div>
-              <h5>Chicago, IL</h5>
+    <section id="profile" class="row">
+        <div class="col l6">
+          <div class="image hvr-shrink">
+            <img src="public/images/headshot.jpg" alt="Garrett Gassensmith">
+            <div class="text">
+              <p>Garrett Gassensmith | Full-stack Developer</p>
+              <p>I'm a professional cinematographer and editor living in Chicago, IL. I currently work at Northwestern
+                University as a Digital Media Specialist and do freelance work by request. I'm also learning to become a
+                computer wizard in Northwestern's Coding Bootcamp, developing full-stack web apps from start to finish!
+              </p>
             </div>
           </div>
         </div>
-        <div class="row">
-          <p class="profile-body">I'm a professional cinematographer and editor living in Chicago, IL.
-            I currently work at Northwestern University as a Digital Media Specialist and do freelance work by request.
-            I'm also learning to become a computer wizard in Northwestern's Coding Bootcamp, developing fully functional
-            web apps from start to finish!</p>
+        <div class="col l6">
+          <div class="image hvr-shrink">
+            <img src="public/images/code.jpg" alt="Garrett Gassensmith">
+            <div class="text">
+              <p>Technologies</p>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>MySQL</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="row">
-          <h3 class="center tech-title">Technology</h3>
-        </div>
-        <div id="tech-view">
-        </div>
-      </div>
     </section>
-    <!-- PORTFOLIO -->
-    <div id="portfolio" class="title">
-      <h3 class="z-depth-5 right-align"><span>{ Portfolio }</span></h3>
-    </div>
-    <section class="background">
-      <div class="container">
-        <div id="portfolio-view" class="row">
-        </div>
-      </div>
+
+    <!-- <div class="parallax-container">
+      <div class="parallax"><img src="public/images/projects.jpg"></div>
+    </div> -->
+    <!-- PROJECTS -->
+    <div class="title">< PROJECTS /></div>
+    <section id="projects" class="row">
+      <div id="portfolio-view"></div>
     </section>
+
+    <!-- <div class="parallax-container">
+      <div class="parallax"><img src="public/images/connect.jpg"></div>
+    </div> -->
     <!-- CONNECT -->
-    <div id="connect" class="title">
-      <h3 class="z-depth-5 right-align"><span>{ Connect }</span></h3>
-    </div>
-    <section class="background center">
-      <div class="row">
-        <div class="col s12 m4 center social-link">
-          <a class="" href="https://github.com/gmg300">
-            <i class="fab fa-github hvr-float"></i>
-            <div>Github</div>
-          </a>
-        </div>
-        <div class="col s12 m4 center social-link">
-          <a class="" href="https://www.linkedin.com/in/garrett-gassensmith-5ab01880/">
-            <i class="fab fa-linkedin hvr-float"></i>
-            <div class="">LinkedIn</div>
-          </a>
-        </div>
-        <div class="col s12 m4 center social-link">
-          <a class="" href="assets/docs/GarrettGassensmith_Resume_200330.pdf">
-            <i class="far fa-file-alt hvr-float"></i>
-            <div class="">Resume</div>
-          </a>
-        </div>
+    <div class="title">< CONNECT /></div>
+    <section id="connect" class="row">
+      <div class="col s12 m4 center social-link">
+        <a class="" href="https://github.com/gmg300">
+          <i class="fab fa-github hvr-float"></i>
+          <div class="icon">Github</div>
+        </a>
+      </div>
+      <div class="col s12 m4 center social-link">
+        <a class="" href="https://www.linkedin.com/in/garrett-gassensmith-5ab01880/">
+          <i class="fab fa-linkedin hvr-float"></i>
+          <div class="icon">LinkedIn</div>
+        </a>
+      </div>
+      <div class="col s12 m4 center social-link">
+        <a class="" href="docs/GarrettGassensmith_Resume_200330.pdf">
+          <i class="far fa-file-alt hvr-float"></i>
+          <div class="icon">Resume</div>
+        </a>
       </div>
     </section>
   </main>
+
   <footer>
     <div class="footer-copyright">
       <div class="container">
@@ -150,7 +124,7 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="assets/js/script.js"></script>
+  <script src="public/script.js"></script>
 </body>
 
 </html>
