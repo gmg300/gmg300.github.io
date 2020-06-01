@@ -34,16 +34,24 @@ main {
 }
 
 /* NAVBAR */
-nav,
+nav {
+background-color: transparent;
+box-shadow: none;
+}
+
 .sidenav {
-background-color: var(--color-primary);
+  background-color: var(--color-accent);
+}
+
+.sidenav .label {
+  color: var(--color-text-light);
 }
 
 nav a,
 nav i,
 .fas.fa-bars,
 .logo {
-  color: var(--color-text-dark);
+  color: var(--color-text-light);
 }
 
 .menu-label {
@@ -53,7 +61,7 @@ nav i,
 
 a.brand-logo,
 a.brand-logo:hover {
-  color: var(--color-text-dark);
+  color: var(--color-text-light);
   font-size: 2rem;
   font-weight: bold;
   vertical-align: middle;
@@ -93,7 +101,7 @@ a.brand-logo:hover {
 }
 
 #profile { 
-  margin-top: 20rem;
+  margin-top: 2rem;
 }
 
 #connect .col {
@@ -152,11 +160,11 @@ img, i {
   background-color: transparent;
   color: var(--color-text-light);
   text-align: center;
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: bold;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  margin-top: 20rem;
+  margin-top: 10rem;
 }
 
 .btn, .btn:hover {
@@ -164,6 +172,15 @@ img, i {
 }
 .btn a, .btn a:hover {
   color: var(--color-text-dark);
+}
+
+footer {
+  margin-top: 10rem;
+}
+
+#copyright {
+  font-size: 1.5rem;
+  color: var(--color-text-light);
 }
 
 
