@@ -127,7 +127,7 @@ $(document).ready(function() {
   function getPortfolio() {
     $.each(portfolio, function() {
       let img = "public/images/stills/" + this.img;
-      let block = `<div class="col l6 z-depth-5">
+      let block = `<div class="col m6 l6 z-depth-5">
                     <div class="profile image hvr-shrink">
                       <img src="${img}" alt="Garrett Gassensmith">
                       <div class="text">
