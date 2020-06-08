@@ -167,6 +167,10 @@ img, i {
   margin-top: 10rem;
 }
 
+.row .col.tech-list {
+  background-color: transparent;
+}
+
 .btn, .btn:hover {
   background-color: var(--color-primary);
 }
