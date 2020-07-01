@@ -1,0 +1,72 @@
+[
+  {
+    "title": "The Coding Library",
+    "description": "Full-stack web app for creating and saving learning resource links",
+    "img": "/the-coding-library-s.jpg",
+    "repo": "https://github.com/gmg300/the-coding-library",
+    "page": "https://coding-resources-312.herokuapp.com/"
+  },
+  {
+    "title": "Shaker",
+    "description": "Front-end app for discovering new cocktails and drink recipes",
+    "img": "/shaker-s.jpg",
+    "repo": "https://github.com/gmg300/Shaker",
+    "page": "https://gmg300.github.io/Shaker/"
+  },
+  {
+    "title": "User Directory",
+    "description": "React app for viewing, sorting and filtering through user information",
+    "img": "/user-directory-s.jpg",
+    "repo": "https://github.com/gmg300/user-directory",
+    "page": "https://gmg300.github.io/user-directory/"
+  },
+  {
+    "title": "Progressive Budget",
+    "description": "Budget tracking PWA allowing users to record deposits, withdrawals and account balance on and offline",
+    "img": "/budget-tracker-s.jpg",
+    "repo": "https://github.com/gmg300/progressive-budget",
+    "page": "https://infinite-temple-98110.herokuapp.com/"
+  },
+  {
+    "title": "Fitness Tracker",
+    "description": "allows users to enter create new workouts, enter exercises and see total statistics",
+    "img": "/fitness-tracker-s.jpg",
+    "repo": "https://github.com/gmg300/fitness-tracker",
+    "page": "https://glacial-dusk-90562.herokuapp.com/"
+  },
+  {
+    "title": "Team Profile Generator",
+    "description": "CLI for taking in employee data and returning an organized HTML page for your team",
+    "img": "/team-profile-generator-s.jpg",
+    "repo": "https://github.com/gmg300/team-profile-generator",
+    "page": ""
+  },
+  {
+    "title": "Weather Dashboard",
+    "description": "Shows basic weather data and a 5-day forecast for a city based on user search",
+    "img": "/weather-dashboard-s.jpg",
+    "repo": "https://github.com/gmg300/weather-dashboard",
+    "page": "https://gmg300.github.io/weather-dashboard/"
+  },
+  {
+    "title": "Note Taker",
+    "description": "Allows users to write and save notes",
+    "img": "/note-taker-s.jpg",
+    "repo": "https://github.com/gmg300/Note-Taker",
+    "page": "https://still-brook-31315.herokuapp.com/"
+  },
+  {
+    "title": "Password Generator",
+    "description": "Web app using JavaScript to create randomly generated passwords",
+    "img": "/password-generator-s.jpg",
+    "repo": "https://github.com/gmg300/password-generator",
+    "page": "https://gmg300.github.io/password-generator/"
+  },
+  {
+    "title": "Code Quiz",
+    "description": "Ten question multiple choice quiz with a timer and highscore board",
+    "img": "/code-quiz-s.jpg",
+    "repo": "https://github.com/gmg300/code-quiz",
+    "page": "https://gmg300.github.io/code-quiz/"
+  }
+]

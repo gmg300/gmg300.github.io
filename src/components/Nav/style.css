@@ -1,0 +1,23 @@
+nav {
+  background-color: transparent;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.location-label {
+  font-size: 2rem;
+  padding-left: 1rem;
+}
+
+.sidenav-trigger {
+  cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 768px) {
+  .location-label {
+    font-size: 1.5rem;
+  }
+}
+
+

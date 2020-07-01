@@ -1,0 +1,57 @@
+.sidenav {
+  background-color: #2d3748;
+}
+.sidenav li:first-child {
+  margin-top: 2rem;
+}
+
+.sidenav li > a {
+  font-size: 2rem;
+  color: white;
+}
+
+.sidenav li > a:hover {
+  background-color: transparent;
+  font-size: 2rem;
+}
+
+
+/* https://codepen.io/tsimenis/pen/BKdENX */
+.sidenav li > a span {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  display: inline;
+  padding: .5rem;
+}
+
+.sidenav li > a span:before, .sidenav li > a span:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  top: 55%;
+  margin-top: -0.5px;
+  background: #fff;
+}
+
+.sidenav li > a span:before {
+  left: -2.5px;
+}
+.sidenav li > a span:after {
+  right: 2.5px;
+  background: #fff;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.sidenav li > a span:hover:before {
+  background: #fff;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.sidenav li > a span:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
